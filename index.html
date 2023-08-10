@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Hoàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="/assets/image/logo.jpg" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="./font_icon/fontawesome-free-6.3.0-web/css/all.css"> -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="main">
+        
+        <!-- start menu -->
+        <div class="menuBar">
+            <div class="home">
+                <div class="pad">
+                    <div class="menu_icon sub">
+                        <div class="icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <p>
+                            <a href="#">Trang chủ</a>
+                        </p>
+                    </div>
+                    <div class="menu_icon sub">
+                        <div class="icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <p>
+                            <a href="#">Trang chủ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="library">
+                <div class="pad">
+                    <div class="menu_icon">
+                        <div class="icon">
+                            <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+                        </div>
+                        <p>
+                            <a href="#">Thư viện</a>
+                        </p>
+                    </div>
+                    <div class="lib_icon">
+                        <div class="icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end menu -->
+
+        <!-- start container -->
+        <div class="container">
+
+            <!-- start navigative -->
+            <div class="nav">
+                <div class="icon back_next">
+                    <div class="back"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+                <div class="contact">
+                    <div class="icon update">
+                        <p>Khám phá Premium</p>
+                    </div>
+                    <div class="profile">
+                        <div class="img_profile">
+                            <!-- <img src="https://znews-photo.zingcdn.me/w660/Uploaded/qhj_yvobvhfwbv/2018_07_18/Nguyen_Huy_Binh1.jpg"> -->
+                        </div>
+                        <div class="name">Hoàng</div>
+                        <div class="icon_profile">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#"></a>Tài khoản</li>
+                                <li><a href="#"></a>Hồ sơ</li>
+                                <li><a href="#"></a>Nâng cấp lên Premium</li>
+                                <li><a href="#"></a>Cài đặt</li>
+                                <li><a href="#"></a>Đăng xuất</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end navigative -->
+
+            <div class="hide" style="overflow: hidden;">
+            <!-- start content -->
+            <div class="content">
+
+                <!-- ! start row 1  -->
+                <div class="content_for_you">
+                    <div class="content_title">
+                        <div class="title"><a href="#">Tập dành cho bạn</a></div>
+                        <div class="visibleAll">
+                            <a href="#">Hiện tất cả</a>
+                        </div>
+                    </div>
+                    <div class="content_main">
+
+                    </div>
+                </div>
+                <!-- ! end row 1 -->
+
+                <!-- ! start row 1  -->
+                <div class="content_for_you">
+                    <div class="content_title">
+                        <div class="title"><a href="#">Tuyển tập hàng đầu của bạn</a></div>
+                        <div class="visibleAll">
+                            <a href="#">Hiện tất cả</a>
+                        </div>
+                    </div>
+                    <div class="content_main content_for_you_main">
+
+                    </div>
+                </div>
+                <!-- ! end row 1 -->
+
+            </div>
+            <!-- end content -->                
+            </div>
+        </div>
+        <!-- end container -->
+
+        <!-- start control -->
+        <div class="control">
+            <div class="control-side control_listSub">
+                <div class="listSubImg">
+                    <div class="img" style="background-image: url('${element.image}')">
+                        <!-- ! -->
+                    </div>
+                </div>
+                <div class="listSubName">
+                    <h5>${element.name}</h5>
+                    <p>${element.singer}</p>
+                </div>
+                <div class="listSubIcon">
+                    <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-chalkboard"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="control_center">
+                <div class="control_icon">
+                    <div class="icon shuffleSong">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                    <div class="icon backSong">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </div>
+                    <div class="icon icon-toggle-play">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-solid fa-circle-pause hideBtn"></i>
+                    </div>
+                    <div class="icon nextSong">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                    <div class="icon repeatSong">
+                        <i class="fa-solid fa-repeat"></i>
+                    </div>
+                </div>
+                <div class="ip_range">
+                    <input type="range" name="" id="runMusic" step="1" min="0" max="100">
+                </div>
+            </div>
+            <div class="control-side control_right">
+                <div class="right_icon">
+                    <div class="icon">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-computer"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-volume-low"></i>
+                    </div>
+                </div>
+                <div class="ip_range">
+                    <input type="range" name="volum" id="volum" value="80" min="0" max="100">
+                </div>
+            </div>
+            <audio src=""></audio>
+        </div>
+        <!-- end control --> 
+    </div>
+
+          
+    <!-- ! JavaScript -->
+    <script src="/assets/js/main.js"></script>
+
+</body>
+</html>

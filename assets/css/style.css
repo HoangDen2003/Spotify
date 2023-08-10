@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    padding-top: 10px;
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 0.8rem black;
+    position: relative;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+.hideBtn {
+    display: none;
+}
+
+.icon {
+    opacity: 0.6;
+}
+
+.icon:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+p a {
+    opacity: 0.6;
+}
+
+p a:hover {
+    opacity: 1;
+}
+
+
+/* left */
+.menuBar {
+    width: 25%;
+    background-color: #000;
+    height: 100%;
+}
+
+.menuBar .home {
+    height: calc(16% - 10px);
+}
+
+.menuBar .home .pad, .menuBar .library .pad {
+    height: 100%;
+}
+
+.menuBar .home, .menuBar .library {
+    padding: 0 10px 10px 10px;
+}
+
+.menuBar .pad {
+    background-color: #121212;
+
+    border-radius: 10px;
+    color: #fff;
+}
+
+.menuBar .menu_icon {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.sub {
+    height: 50%;
+}
+
+.menuBar .menu_icon .icon, .menuBar .library .pad .lib_icon {
+    font-size: 25px;
+    padding: 20px;
+}
+
+.menuBar .menu_icon a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menuBar .library {
+    height: calc(84% - 85px);
+}
+
+.menuBar .library .pad {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.menuBar .library .pad .lib_icon {
+    display: flex;
+}
+
+.menuBar .library .pad .lib_icon .icon {
+    padding-left: 25px;
+}
+
+/* right */
+.container {
+    width: 75%;
+    height: calc(100vh - 95px);
+    overflow-y: scroll;
+    background-color: #121212;
+    /* background-image: linear-gradient(#002626 1%, 20%, #121212 99%); */
+
+
+    border-radius: 10px;
+}
+
+.contaienr::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #070707;
+}
+
+.nav {
+    width: 75%;
+    background-color: #070707;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #121212;
+    transition: background-color 0.5s ease;
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.bg1{
+    background-color: #00262684;
+}
+
+.bg2 {
+    background-color: #002626;
+}
+/* 
+@keyframes Scroll {
+    to {background-color: #070707;}
+} */
+
+.back_next {
+    display: flex;
+}
+
+.back, .next {
+    width: 30px;
+    height: 30px;
+    background-color: #0a0a0a;
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    margin: 20px 0;
+    font-weight: 200;
+}
+
+.back {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.next {
+    margin-left: 5px;
+}
+
+.back i, .next i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact {
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.contact .update {
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 100;
+}
+
+.contact .update p {
+    font-weight: 600;
+}
+
+.contact .profile {
+    background-color: #000;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 20px;
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.contact .profile .dropdown {
+    position: absolute;
+    display: block;
+    top: 40px;
+    background-color: #282828;
+    border-radius: 4px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(100, 154, 177, 0.32) 0px 2px 16px 0px;
+    width: 200px;
+    right: 0px;
+    visibility: hidden;
+}
+
+.contact .profile .dropdown ul {
+    padding: 5px;
+}
+
+.contact .profile .dropdown li {
+    list-style-type: none;
+    padding: 15px 10px;
+}
+
+.contact .profile .dropdown li:last-child {
+    border-top: 0.5px solid #ccc;
+}
+
+.contact .profile .dropdown li:hover {
+    background-color: #a7a7a7;
+}
+
+.profile .img_profile {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-image: url(/assets/image/logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile .name {
+    font-weight: 600;
+    padding: 0 5px;
+}
+
+.profile .icon_profile {
+    padding-right: 5px;
+}
+
+/* content */
+.content {
+    background-color: #121212;
+    /* background-image: linear-gradient(#002626 5%, 20%, #121212 95%); */
+
+    /* height: 1230px;
+    padding: 20px;
+    /* overflow-y: scroll; */
+    /* margin-top: 50px; */
+}
+
+.content_for_you .content_title {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_title .title a {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+
+.content_title .visibleAll a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.title a:hover , .visibleAll a:hover  {
+    text-decoration: underline;
+}
+
+.content_main {
+    display: grid;
+    grid-template-columns: calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7);
+    column-gap: 25px;
+    row-gap: 20px;
+}
+
+.content_element {
+    background-color: #181818;
+    transition-duration: 0.5s;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.content_element .img_e {
+    width: calc(100% - 30px);
+    height: 150px;
+    padding: 10px;
+    margin: auto;
+    /* overflow: hidden; */
+    position: relative;
+    /* background-image: url(/assets/image/TunPham.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content_element .img_e .img_e_sub {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 135px;
+    left: -13px;
+    z-index: 0;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content_element .img_e img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.content_element h2, .content_element p {
+    margin-top: 10px;
+}
+
+.content_element h2 {
+    font-size: 15px;
+    color: #fff;
+
+    /* todo: tự động thêm dấu 3 chấm */
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+.content_element p {
+    font-size: 10px;
+    color: #ccc;
+}
+
+.content_element:hover {
+    background-color: #515151;
+}
+
+/* TODO: CSS control */
+.control {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background-color: #000;
+    padding: 5px;
+}
+
+.control_center {
+    width: 60%;
+    text-align: center;
+}
+
+.control .control_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control .control_icon .icon {
+    margin: 5px;
+    color: #fff;
+}
+
+.control_center input[type = range] {
+    /* -webkit-appearance: none; */
+    accent-color: #767676;
+    width: 60%;
+}
+
+.control_center .ip_range:hover input[type = range] {
+    accent-color: coral;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: coral;
+    color: #efefef;
+}
+
+.control-side {
+    width: 20%;
+}
+
+.control .icon {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.control .icon-toggle-play {
+    font-size: 40px;
+}
+
+.control .control_listSub {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control .control_listSub p {
+    font-size: 11px;
+    font-style: italic;
+    color: #ccc;
+    margin-top: 3px;
+    line-height: 1.1;
+}
+
+.control .listSubImg {
+    width: 20%;
+    /* padding: 10px; */
+}
+
+.control .listSubImg .img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-image: url(/assets/image/song1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.control .listSubName {
+    width: 60%;
+}
+
+.control .listSubIcon {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.control .listSubIcon i {
+    font-size: 16px;
+}
+
+.control .control_right {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.control .control_right .right_icon {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.control .control_right .right_icon .icon {
+    padding: 5px;
+}
+
+.control .control_right .ip_range {
+    width: 60%;
+    padding: 5px;
+}
+
+.control .control_right .ip_range {
+    accent-color: #767676;
+    width: 60%;
+}
+
+.control .control_right .ip_range input:hover {
+    accent-color: coral;
+}
+
+.container .hide {
+    height: 1230px;
+    padding: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+}
