@@ -261,7 +261,7 @@ p a:hover {
     height: 20px;
     margin-right: 5px;
     border-radius: 50%;
-    background-image: url(/assets/image/logo.jpg);
+    background-image: url(../image/logo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -461,7 +461,7 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 50px;
     height: 50px;
     margin: auto;
-    background-image: url(/assets/image/song1.jpg);
+    background-image: url(../image/song1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
