@@ -31,71 +31,71 @@ const app = {
             name: 'Bớt Quan Trọng, Thêm Hạnh Phúc',
             fullName: 'Bớt Quan Trọng, Thêm Hạnh Phúc',
             author: 'Hiếu TV',
-            path: '../audio/song1.mp3',
-            image: '../image/song1.jpg'
+            path: './assets/audio/song1.mp3',
+            image: './assets/image/song1.jpg'
         },
         {
             name: 'Thanh Xuân',
             fullName: 'Thanh Xuân',
             author: 'Da LAB',
-            path: '../audio/song2.mp3',
-            image: '../image/song2.jpg'
+            path: './assets/audio/song2.mp3',
+            image: './assets/image/song2.jpg'
         },
         {
             name: 'Thủ đô Cypher',
             fullName: 'Thủ Đô Cypher',
             author: "Beck'Stage X Biti's Hunter ( RPT Orijinn, LOW G, RZMas, RPT MCK)",
-            path: '../audio/song3.mp3',
-            image: '../image/song3.jpg'
+            path: './assets/audio/song3.mp3',
+            image: './assets/image/song3.jpg'
         },
         {
             name: 'Rolling in the Deep',
             fullName: 'Rolling in the Deep',
             author: "Adele",
-            path: '../audio/song4.mp3',
-            image: '../image/song4.jpg'
+            path: './assets/audio/song4.mp3',
+            image: './assets/image/song4.jpg'
         },
         {
             name: 'Skyfall',
             fullName: 'Skyfall',
             author: "Adedle",
-            path: '../audio/song5.mp3',
-            image: '../image/song5.jpg'
+            path: './assets/audio/song5.mp3',
+            image: './assets/image/song5.jpg'
         },
         {
             name: 'Making My Way',
             fullName: 'Making My Way',
             author: "Sơn Tùng MTP",
-            path: '../audio/song6.mp3',
-            image: '../image/song6.jpg'
+            path: './assets/audio/song6.mp3',
+            image: './assets/image/song6.jpg'
         },
         {
             name: 'Đừng Về Trễ Nha',
             fullName: 'Đừng Về Trễ Nha',
             author: "Sơn Tùng MTP",
-            path: '../audio/song7.mp3',
-            image: '../image/song7.jpg'
+            path: './assets/audio/song7.mp3',
+            image: './assets/image/song7.jpg'
         },
         {
             name: 'Thủ đô Cypher',
             fullName: 'Thủ Đô Cypher',
             author: "Beck'Stage X Biti's Hunter ( RPT Orijinn, LOW G, RZMas, RPT MCK)",
-            path: '../audio/song8.mp3',
-            image: '../image/song8.jpg'
+            path: './assets/audio/song8.mp3',
+            image: './assets/image/song8.jpg'
         },
         {
             name: 'Thủ đô Cypher',
             fullName: 'Thủ Đô Cypher',
             author: "Beck'Stage X Biti's Hunter ( RPT Orijinn, LOW G, RZMas, RPT MCK)",
-            path: '../audio/song9.mp3',
-            image: '../image/song9.jpg'
+            path: './assets/audio/song9.mp3',
+            image: './assets/image/song9.jpg'
         },
         {
             name: 'Thủ đô Cypher',
             fullName: 'Thủ Đô Cypher',
             author: "Beck'Stage X Biti's Hunter ( RPT Orijinn, LOW G, RZMas, RPT MCK)",
-            path: '../audio/song10.mp3',
-            image: '../image/song10.jpg'
+            path: './assets/audio/song10.mp3',
+            image: './assets/image/song10.jpg'
         }
     ],
     render: function () {
